@@ -21,7 +21,7 @@ export function ProjectSection({sectionRef} : ProjectSectionProps){
                     <img alt="Project One"
                          className="w-full h-[200px] object-cover"
                          height="200"
-                        // src=""
+                        src="/paypro.png"
                          style={{
                              aspectRatio: "300/200",
                              objectFit: "cover",
@@ -29,58 +29,64 @@ export function ProjectSection({sectionRef} : ProjectSectionProps){
                          width="300"/>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                    <Button variant="outline">View Project</Button>
-                    <Button variant="outline">
-                        <Github className="h-4 w-4"/>
+                    <Button variant="outline" asChild>
+                        <a href="https://pay-pro-mocha.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        View Project
+                        </a>
+                    </Button>
+                    <Button variant="outline" asChild>
+                        <a href="https://github.com/Codebreaker04/PayPro" target="_blank" rel="noopener noreferrer">
+                            <Github className="h-4 w-4"/>
+                        </a>
                     </Button>
                 </CardFooter>
             </Card>
-            <Card>
-                <CardHeader>
-                    <CardTitle className="text-3xl">Pay Pro</CardTitle>
-                    <CardDescription className="text-md">A Wallet Payments Apps</CardDescription>
-                </CardHeader>
-                <CardContent>
-                    <img alt="Project One"
-                         className="w-full h-[200px] object-cover"
-                         height="200"
-                         // src=""
-                         style={{
-                             aspectRatio: "300/200",
-                             objectFit: "cover",
-                         }}
-                         width="300"/>
-                </CardContent>
-                <CardFooter className="flex justify-between">
-                    <Button variant="outline">View Project</Button>
-                    <Button variant="outline">
-                        <Github className="h-4 w-4"/>
-                    </Button>
-                </CardFooter>
-            </Card>
-            <Card>
-                <CardHeader>
-                    <CardTitle className="text-3xl">Pay Pro</CardTitle>
-                    <CardDescription className="text-md">A Wallet Payments Apps</CardDescription>
-                </CardHeader>
-                <CardContent>
-                    <img alt="Project One"
-                         className="w-full h-[200px] object-cover"
-                         height="200"
-                        // src=""
-                         style={{
-                             aspectRatio: "300/200",
-                             objectFit: "cover",
-                         }}
-                         width="300"/>
-                </CardContent>
-                <CardFooter className="flex justify-between">
-                    <Button variant="outline">View Project</Button>
-                    <Button variant="outline">
-                        <Github className="h-4 w-4"/>
-                    </Button>
-                </CardFooter>
-            </Card>
+            {/*<Card>*/}
+            {/*    <CardHeader>*/}
+            {/*        <CardTitle className="text-3xl">Pay Pro</CardTitle>*/}
+            {/*        <CardDescription className="text-md">A Wallet Payments Apps</CardDescription>*/}
+            {/*    </CardHeader>*/}
+            {/*    <CardContent>*/}
+            {/*        <img alt="Project One"*/}
+            {/*             className="w-full h-[200px] object-cover"*/}
+            {/*             height="200"*/}
+            {/*             // src=""*/}
+            {/*             style={{*/}
+            {/*                 aspectRatio: "300/200",*/}
+            {/*                 objectFit: "cover",*/}
+            {/*             }}*/}
+            {/*             width="300"/>*/}
+            {/*    </CardContent>*/}
+            {/*    <CardFooter className="flex justify-between">*/}
+            {/*        <Button variant="outline">View Project</Button>*/}
+            {/*        <Button variant="outline">*/}
+            {/*            <Github className="h-4 w-4"/>*/}
+            {/*        </Button>*/}
+            {/*    </CardFooter>*/}
+            {/*</Card>*/}
+            {/*<Card>*/}
+            {/*    <CardHeader>*/}
+            {/*        <CardTitle className="text-3xl">Pay Pro</CardTitle>*/}
+            {/*        <CardDescription className="text-md">A Wallet Payments Apps</CardDescription>*/}
+            {/*    </CardHeader>*/}
+            {/*    <CardContent>*/}
+            {/*        <img alt="Project One"*/}
+            {/*             className="w-full h-[200px] object-cover"*/}
+            {/*             height="200"*/}
+            {/*            // src=""*/}
+            {/*             style={{*/}
+            {/*                 aspectRatio: "300/200",*/}
+            {/*                 objectFit: "cover",*/}
+            {/*             }}*/}
+            {/*             width="300"/>*/}
+            {/*    </CardContent>*/}
+            {/*    <CardFooter className="flex justify-between">*/}
+            {/*        <Button variant="outline">View Project</Button>*/}
+            {/*        <Button variant="outline">*/}
+            {/*            <Github className="h-4 w-4"/>*/}
+            {/*        </Button>*/}
+            {/*    </CardFooter>*/}
+            {/*</Card>*/}
         </div>
     </div>
     </section>

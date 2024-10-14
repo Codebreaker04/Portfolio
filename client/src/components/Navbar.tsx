@@ -1,5 +1,6 @@
 import React from "react";
 import {Button} from "@/components/ui/button.tsx";
+import {DarkButton} from "@/components/DarkMode.tsx";
 
 interface navbarProps{
     aboutRef ?: React.RefObject<HTMLElement>;
@@ -14,9 +15,10 @@ export function Navbar({aboutRef, projectRef, contactRef}: navbarProps){
 
 
     return <header className="sticky top-0 w-full h-[70px] border bg-white border-b border-gray-300 shadow">
-        <div className="flex z-40  p-4 items-center justify-between sm:gap-x-0 ">
+        <div className="flex z-40 pl-4 pt-4 items-center justify-between sm:gap-x-0 ">
             <a href="/"><div className="text-3xl font-semibold"> Yuvraj Ahuja </div></a>
-            <div className="flex items-center justify-around pt-1 pr-6 ">
+            <div className="flex items-center justify-around pr-6 ">
+                <DarkButton/>
                 <Button variant="ghost" className="text-lg text-neutral-500" onClick={() => scrollToSection(aboutRef)}>About</Button>
                 <Button variant="ghost" className="text-lg text-neutral-500" onClick={() => scrollToSection(projectRef)}>Projects</Button>
                 <Button variant="ghost" className="text-lg text-neutral-500" onClick={() => scrollToSection(contactRef)}>Contact</Button>
