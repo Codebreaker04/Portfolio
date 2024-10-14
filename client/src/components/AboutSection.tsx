@@ -13,7 +13,7 @@ export function AboutSection({sectionRef, projectRef, contactRef}: ProjectSectio
         ref?.current?.scrollIntoView({behavior: "smooth"});
     }
 
-    return <section ref={sectionRef}>
+    return <section ref={sectionRef} className="dark:bg-neutral-900">
         <div className="flex justify-center items-center py-12 md:py-24 lg:py-32 xl:py-56 ">
             <div className="flex flex-col gap-y-3">
             <div className="font-bold text-5xl w-full sm:text-4xl md:text-5xl lg:text-6xl/none">Yuvraj Ahuja</div>
