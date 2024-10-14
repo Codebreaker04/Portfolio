@@ -8,11 +8,11 @@ interface ProjectSectionProps {
 }
 
 export function ProjectSection({sectionRef} : ProjectSectionProps){
-    return <section ref={sectionRef} className="w-full py-12 md:py-24 lg:py-32">
+    return <section ref={sectionRef} className="w-full py-12 md:py-24 lg:py-32 dark:bg-neutral-900">
     <div className="px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Projects</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <Card>
+            <Card className="dark:bg-neutral-800 bg-neutral-300">
                 <CardHeader>
                     <CardTitle className="text-3xl">Pay Pro</CardTitle>
                     <CardDescription className="text-md">A Wallet Payments Apps</CardDescription>
